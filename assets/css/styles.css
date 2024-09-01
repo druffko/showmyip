@@ -1,0 +1,108 @@
+body {
+  background: url("../../assets/img/smip-bg.webp") center / cover;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .main-content {
+    flex: 1;
+    /*width: 60%;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin-top: 20vh;
+  }
+}
+
+.resolver-card {
+  padding: 1px;
+}
+
+@media (min-width: 576px) {
+  .resolver-card {
+    padding: 30px;
+  }
+}
+
+.smip-footer {
+  background-color: white;
+  margin-top: auto;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 20px;
+  color: #888888;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 15px;
+  color: #888888;
+}
+
+.exposed-btn {
+  color: #dd4f4f;
+  border-color: #dd4f4f;
+  background-color: transparent;
+  padding: 1px 11px;
+}
+
+.exposed-btn:hover {
+  color: #dd4f4f;
+  border-color: #dd4f4f;
+  background-color: transparent;
+  padding: 1px 11px;
+}
+
+.hide-btn {
+  background-color: #4faadd;
+  border-color: #4faadd;
+}
+
+.isp-stuff {
+  padding-left: 11px;
+}
+
+a {
+  color: #888888;
+}
+
+.ad-col {
+  width: 15%;
+}
+
+.content-card {
+  width: 70%;
+}
+
+.adspot-img {
+  width: 100%;
+}
+
+.top-adspot {
+  width: 80%;
+  text-align: center;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
