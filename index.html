@@ -14,61 +14,55 @@
 </head>
 
 <body onload="getUserInfo()">
-    <div class="container main-content" width="100%">
-        <div class="row">
-            <div class="col-md-4 ad-col"></div>
-            <div class="col-md-4 content-card">
-                <div class="card resolver-card">
-                    <div class="card-body">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h2>Your public IP address</h2><button class="btn btn-primary flash animated infinite exposed-btn" type="button">Exposed</button>
-                                </div>
-                                <div class="col-md-6"></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h1 id="uip">8.8.8.8</h1>
-                                </div>
-                                <div class="col-md-6"><button class="btn btn-primary hide-btn" type="button" data-bs-toggle="modal" data-bs-target="#vpnmodal">Hide IP address</button></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h4>Location</h4>
-                                    <h3 id="ulocation">somewhere</h3>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4>Country Code</h4>
-                                    <h3 id="ucc">??</h3>
-                                </div>
-                            </div>
+    <section class="ipinfo-section">
+        <div class="card resolver-card">
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>Your public IP address</h2><button class="btn btn-primary flash animated infinite exposed-btn" type="button">Exposed</button>
                         </div>
-                        <hr>
-                        <h4 class="isp-stuff">ISP</h4>
-                        <h3 id="uisp" class="isp-stuff">ISP Company</h3>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <h4>Device Type</h4>
-                                    <h3 id="udevice">unknown</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <h4>Operating system</h4>
-                                    <h3 id="uos">someOS</h3>
-                                </div>
-                                <div class="col-md-4">
-                                    <h4>Browser</h4>
-                                    <h3 id="ubrowser">Dora the explorer</h3>
-                                </div>
-                            </div>
+                        <div class="col-md-6"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h1 id="uip">8.8.8.8</h1>
+                        </div>
+                        <div class="col-md-6"><button class="btn btn-primary hide-btn" type="button" data-bs-toggle="modal" data-bs-target="#vpnmodal">Hide IP address</button></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Location</h4>
+                            <h3 id="ulocation">somewhere</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Country Code</h4>
+                            <h3 id="ucc">??</h3>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <h4 class="isp-stuff">ISP</h4>
+                <h3 id="uisp" class="isp-stuff">ISP Company</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h4>Device Type</h4>
+                            <h3 id="udevice">unknown</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Operating system</h4>
+                            <h3 id="uos">someOS</h3>
+                        </div>
+                        <div class="col-md-4">
+                            <h4>Browser</h4>
+                            <h3 id="ubrowser">Dora the explorer</h3>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 ad-col"></div>
         </div>
-    </div>
+    </section>
     <footer class="text-center py-4 smip-footer">
         <div class="container">
             <div class="row row-cols-1 row-cols-lg-3">
