@@ -1,115 +1,62 @@
 body {
-  background: url("../../assets/img/smip-bg.webp") center / cover;
-  font-family: 'DM Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background: url("../../assets/img/background.webp");
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
-.main-content {
-  flex: 1;
-  margin-top: 20vh;
-  margin-bottom: 50px;
-  width: 100%;
+.frost-container {
+  width: 60rem;
+  height: 40rem;
+  box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
 }
 
-@media (min-width: 576px) {
-  .main-content {
-    flex: 1;
-    /*width: 60%;*/
-    /*margin-left: auto;*/
-    /*margin-right: auto;*/
-    margin-top: 20vh;
-  }
+.frost-container:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(64,64,64,0.64);
+  filter: blur(10px);
+  margin: -20px;
 }
 
-.resolver-card {
-  padding: 1px;
+.info-div {
+  padding: 30px;
 }
 
-@media (min-width: 576px) {
-  .resolver-card {
-    padding: 30px;
-  }
+.detail-card {
+  background-color: #333;
+  color: white;
+  margin: 5px;
 }
 
-.smip-footer {
-  background-color: white;
-  margin-top: auto;
+.info-content {
+  font-family: 'JetBrains Mono';
+  font-size: 35px;
 }
 
-h1 {
-  font-weight: 600;
+.isp-name {
+  font-family: 'JetBrains Mono';
+  font-size: 25px;
 }
 
-h2 {
-  font-weight: 300;
-  font-size: 20px;
-  color: #888888;
-}
-
-h3 {
-  font-weight: 500;
-  font-size: 20px;
-}
-
-h4 {
-  font-weight: 300;
+.info-type {
+  font-family: 'JetBrains Mono';
+  color: #848484;
+  text-transform: uppercase;
   font-size: 15px;
-  color: #888888;
-}
-
-.exposed-btn {
-  color: #dd4f4f;
-  border-color: #dd4f4f;
-  background-color: transparent;
-  padding: 1px 11px;
-}
-
-.exposed-btn:hover {
-  color: #dd4f4f;
-  border-color: #dd4f4f;
-  background-color: transparent;
-  padding: 1px 11px;
-}
-
-.hide-btn {
-  background-color: #4faadd;
-  border-color: #4faadd;
-}
-
-.isp-stuff {
-  padding-left: 11px;
-}
-
-a {
-  color: #888888;
-}
-
-.ad-col {
-  width: 15%;
-}
-
-.content-card {
-  width: 70%;
-}
-
-.adspot-img {
-  width: 100%;
-}
-
-.top-adspot {
-  width: 80%;
-  text-align: center;
-  align-content: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.ipinfo-section {
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10vh;
 }
 
