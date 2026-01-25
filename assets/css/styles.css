@@ -9,14 +9,27 @@ body {
 }
 
 .frost-container {
-  width: 60rem;
-  height: 40rem;
+  width: 20rem;
+  height: 100rem;
   box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
   border-radius: 5px;
   position: relative;
   z-index: 1;
   background: inherit;
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .frost-container {
+    width: 60rem;
+    height: 40rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+  }
 }
 
 .frost-container:before {
