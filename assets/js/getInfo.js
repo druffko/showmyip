@@ -28,6 +28,11 @@ function setIPInfo(){
     document.getElementById("ulocation").textContent = localStorage.getItem('country');
     document.getElementById("ucc").textContent = localStorage.getItem('code');
     document.getElementById("uisp").textContent = localStorage.getItem('isp');
+    const countryCode = localStorage.getItem('code');
+  if (countryCode) {
+    document.getElementById('uflag').src =
+      `https://flagsapi.com/${countryCode}/flat/64.png`;
+  }
 }
 
 function detectBrowser() {
