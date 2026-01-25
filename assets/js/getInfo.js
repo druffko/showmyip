@@ -1,6 +1,6 @@
 function getUserInfo(){
     //Use BigDataCloud API to get Users IP
-    let apiKey = '';
+    let apiKey = ''; // ADD YOUR API KEY!
     $.getJSON('https://api.bigdatacloud.net/data/client-ip', function(data) {
         localStorage.setItem('ip', data.ipString.toString());
 });
